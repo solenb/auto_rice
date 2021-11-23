@@ -11,54 +11,54 @@ read -p "[*] DO YOU WANT TO PROCEED [Y/N] " allowed
 
 printf "${cg}[*] Updating repositories\n"
 pacman --noconfirm -Suy
+pacman --noconfirm -S --needed git base-devel yay
 printf "${cg}[*] Repositories Updated\n"
 
 printf "${cg}[*] Installing Packages\n"
-pacman --noconfirm -S --needed git base-devel yay yes
-pacman --noconfirm -S betterlockscreen ,\
-	alacritty ,\
-	autorandr ,\
-	bitwarden ,\
-	bluetooth-autoconnect ,\
-	bpytop ,\
-	chezmoi ,\
-	code ,\
-	nautilus ,\
-	dunst ,\
-	feh ,\
-	neofetch ,\
-	rancher ,\
-	flameshot-git ,\
-	firefox ,\
-	i3-gaps ,\
-	nautilus-nextcloud ,\
-	networkmanager-dmenu-git ,\
-	nfs-utils ,\
-	duf ,\
-	oh-my-zsh ,\
-	onlyoffice-desktopeditors ,\
-	pavucontrol ,\
-	picom-ibhagwan-git ,\
-	playerctl ,\
-	polybar ,\
-	pulseaudio-bluetooth ,\
-	pulseaudio-ctl ,\
-	remmina ,\
-	remmina-plugin-rdesktop ,\
-	rofi ,\
-	rsync ,\
-	samba ,\
-	spotify ,\
-	sshpass ,\
-	sudo ,\
-	stress ,\
-	system-config-printer ,\
-	tmux ,\
-	tree ,\
-	ttf-jetbrains-mono ,\
-	vim ,\
-	wget ,\
-	zathura ,\
+yay -S  betterlockscreen \
+	alacritty \
+	autorandr \
+	bitwarden \
+	bluetooth-autoconnect \
+	bpytop \
+	chezmoi \
+	code \
+	nautilus \
+	dunst \
+	feh \
+	neofetch \
+	rancher \
+	flameshot-git \
+	firefox \
+	i3-gaps \
+	nautilus-nextcloud \
+	networkmanager-dmenu-git \
+	nfs-utils \
+	duf \
+	oh-my-zsh \
+	onlyoffice-desktopeditors \
+	pavucontrol \
+	picom-ibhagwan-git \
+	playerctl \
+	polybar \
+	pulseaudio-bluetooth \
+	pulseaudio-ctl \
+	remmina \
+	remmina-plugin-rdesktop \
+	rofi \
+	rsync \
+	samba \
+	spotify \
+	sshpass \
+	sudo \
+	stress \
+	system-config-printer \
+	tmux \
+	tree \
+	ttf-jetbrains-mono \
+	vim \
+	wget \
+	zathura \
 	zsh-autosuggestions-git
 printf "${cg}[*] Packages Installed\n"
 
