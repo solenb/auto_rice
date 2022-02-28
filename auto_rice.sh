@@ -63,5 +63,5 @@ yay -S  betterlockscreen \
 printf "${cg}[*] Packages Installed\n"
 
 printf "${cg}[*] Installing Dotfiles\n"
-sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply https://github.com/solenb/manjaro_dotfiles
+sh -c "$(curl -fsLS git.io/chezmoi)" -- init --apply https://github.com/solenb/dotfiles.git
 printf "${cg}[*] Dotfiles Installed\n"
